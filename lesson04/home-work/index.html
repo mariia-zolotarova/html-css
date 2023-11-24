@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <h1 class="h1 header__h1">
+                    HTML5 Семантичні елементи
+                </h1>
+                <div class="p header__p">
+                    <p>Семантичний елемент чітко описує його значення як для браузера, так і для розробника.</p>
+                    <p>Приклади не <b>семантичних</b> елементів: &ltdiv&gt і &ltspan&gt- нічого не говорить про його
+                        вміст.</p>
+                    <p>Приклади <b>семантичних</b> елементів: &ltform>, &lttable&gt і &ltarticle&gt- чітко визначає його
+                        зміст.</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="browser">
+            <div class="container browser__container">
+                <h2 class="title browser__title">
+                    Підтримка браузерів
+                </h2>
+                <div class="img browser__img">
+                    <img src="./img/chrome-logo.png" alt="chrome" width="50">
+                    <img src="./img/edge-logo.png" alt="edge" width="50">
+                    <img src="./img/safari-logo.png" alt="safari" width="50">
+                </div>
+                <div class="p browser__p">
+                    <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+                    <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
+                    <p>Прочитайте про це в <a href="https://www.blogger.com/onboarding">підтримці браузера HTML5</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-elements">
+            <div class="container new-elements__container">
+                <h2 class="title new-elements__title">
+                    Нові семантичні елементи в HTML5
+                </h2>
+                    <p class="p new-elements__p">
+                        HTML5 пропонує нові семантичні елементи для визначення різних частин
+                        веб-сторінки:
+                    </p>
+                    <ul class="ul new-elements__ul">
+                        <li>&ltsection&gt</li>
+                        <li>&ltarticle&gt</li>
+                        <li>&ltheader&gt</li>
+                        <li>&ltfooter&gt</li>
+                    </ul>
+            </div>
+        </section>
+
+        <section class="section-element">
+            <div class="container section-element__container">
+                <h2 class="title section-element__title">
+                    HTML5 &ltsection&gt елемент
+                </h2>
+
+                <div class="p section-element__p">
+                    <p>Елемент &ltsection&gt визначає розділ в документі.
+                    </p>
+                    <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
+                        тематичну угруповання контенту, зазвичай з заголовком".</p>
+                    <p>Домашня сторінка зазвичай може бути розділена на розділи для
+                        ознайомлення, змісту і контактної інформації.
+                    </p>
+                </div>
+
+                <img class="img section-element__img" src="./img/example-section-element.png" alt="section element example" width="600">
+            </div>
+        </section>
+
+        <section class="article-element">
+            <div class="container article-element__container">
+                <h2 class="title article-element__title">
+                    HTML5 &ltarticle&gt елемент
+                </h2>
+
+                <div class="p article-element__p">
+                    <p>Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
+                    <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+                        читати його незалежно від іншої частини веб-сайту.</p>
+                    <p>Приклади того, де можна використовувати елемент &ltarticle&gt. : </p>
+                </div>
+                <ul class="ul article-element__ul">
+                    <li>Повідомлення на форумі</li>
+                    <li>блозі</li>
+                    <li>Газетна стаття</li>
+                </ul>
+
+                <img class="img article-element__img" src="./img/example-article-element.png" alt="article element example" width="600">
+            </div>
+        </section>
+
+        <section class="header-element">
+            <div class="container header-element__container">
+                <h2 class="title header-element__title">
+                    HTML5 &ltheader&gt елемент
+                </h2>
+
+                <div class="p header-element__p">
+                    <p>Елемент &ltheader&gt задає заголовок для документа або розділу.</p>
+                    <p>Елемент &ltheader&gt повинен використовуватися в якості контейнера для вступного змісту.</p>
+                    <p>В одному документі може бути кілька елементів &ltheader&gt. </p>
+                    <p>У наступному прикладі визначається заголовок для статті:</p>
+                </div>
+
+                <img class="img header-element__img" src="./img/example-header-element.png" alt="header element example" width="600">
+            </div>
+        </section>
+
+        <section class="footer-element">
+            <div class="container footer-element__container">
+                <h2 class="title footer-element__title">
+                    HTML5 &ltfooter&gt елемент
+                </h2>
+
+                <div class="p footer-element__p">
+                    <p>Елемент &ltfooter&gt вказує нижній колонтитул для документа або розділу.</p>
+                    <p>Нижній колонтитул зазвичай містить автора документа, інформацію про
+                        авторське право, посилання на умови використання, контактні дані і т.д.</p>
+                    <p>В одному документі може бути кілька елементів &ltfooter&gt. </p>
+                </div>
+
+                <img class="img footer-element__img" src="./img/example-footer-element.png" alt="footer element example" width="600">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container">
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
