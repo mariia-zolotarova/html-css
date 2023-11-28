@@ -1,0 +1,14 @@
+.label {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.field {
+    width: 100%;
+}
+.form {
+    display: inline-block;
+}
+
+
+
