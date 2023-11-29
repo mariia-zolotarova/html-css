@@ -11,53 +11,53 @@
 <body>
     <div class="wrapper">
         <form class="form">
-            <div class="form_input">
-                <label for="inp1">
-                    <p>Full Name</p>
-                    <input id="inp1" type="name">
+            <div class="form__input">
+                <label class="label" for="inp1">
+                    Full Name
                 </label>
+                <input id="inp1" type="name">
             </div>
 
             <div class="form__input">
-                <label for="inp2">
-                    <p>Email</p>
-                    <input id="inp2" type="email">
+                <label class="label" for="inp2">
+                    Email
                 </label>
+                <input id="inp2" type="email">
             </div>
 
             <div class="form__input">
-                <label for="inp3">
-                    <p>Password</p>
-                    <input id="inp3" type="password">
+                <label class="label" for="inp3">
+                    Password
                 </label>
+                <input id="inp3" type="password">
             </div>
 
             <div class="form__input">
-                <label for="inp4">
-                    <p>Password Again</p>
-                    <input id="inp4" type="password">
+                <label class="label" for="inp4">
+                    Password Again
                 </label>
+                <input id="inp4" type="password">
             </div>
 
             <div class="form__radiobtn">
-                <p>Sex</p>
-                <div class="field">
-                    <input name="ram" type="radio">
-                    Man
+                <label class="label">Sex</label>
+                <div class="sex-field">
+                    <input id="sex-man" name="sex" type="radio">
+                    <label for="sex-man">Man</label>
                 </div>
-                <div class="field">
-                    <input name="ram" type="radio">
-                    Womman
+                <div class="sex-field">
+                    <input id="sex-woman" name="sex" type="radio">
+                    <label for="sex-woman">Woman</label>
                 </div>
             </div>
 
             <div class="form__number">
-                <p>Age</p>
+                <label class="label" for="inp6">Age</label>
                 <input id="inp6" type="number">
             </div>
 
             <div class="form__select">
-                <p>Course</p>
+                <label class="label">Course</label>
                 <select name="inp7" id="inp7">
                     <option value="chooseCourse">Choose Course</option>
                     <option value="course1">Course 1</option>
@@ -65,22 +65,18 @@
                 </select>
             </div>
 
-            <div class="form__checkbox">
-                <p>Check Box</p>
-                <div class="field">
-                    <input id="inp01" type="checkbox">
-                    <label for="inp01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, molestiae?</label>
-                </div>
-                <div class="field">
-                    <input id="inp02" type="checkbox">
-                    <label for="inp02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quod?</label>
-                </div>
-                <div class="field">
-                    <input id="inp03" type="checkbox">
-                    <label for="inp03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, rerum?</label>
-                </div>
+            <div class="form__textarea">
+                <label class="label">Full Adress</label>
+                <textarea placeholder="County, city, vilage, region, street" name="full-adress"  id="inp8" cols="30" rows="10" > </textarea>
             </div>
+
+            <div class="form__checkbox">
+                <input id="inp9" type="checkbox">
+                <label for="inp9">I agree to the processing of personal data</label>
+            </div>
+
             <div class="form__button">
+                <button>Clean Form</button>
                 <button>Submit</button>
             </div>
         </form>
