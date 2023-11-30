@@ -1,0 +1,80 @@
+/* Global style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #070707;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text {
+    text-align: center;
+    font-weight: 400;
+}
+
+.link{
+    color: #828282;;
+}
+.link--active{
+    color:#070707;
+}
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+
+/* Global style End*/
+
+/* Globah Header */
+.header__nav{
+    text-align: center;
+}
+/* Global Header end */
+
+/* Herro section */
+.hero__img {
+    width: 100%;
+}
+
+/* Herro section End*/
+
+/* Section About */
+.about-me{
+    background-color:  #F6F6F6;
+}
+.about-me .container{
+    max-width: 480px;
+}
