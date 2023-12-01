@@ -11,87 +11,94 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="menu header-menu">
-                <a href="#home-anchor"> Home </a>
-                <a href="#about-me-anchor"> About me </a>
-                <a href="#skills-anchor"> Skills </a>
-                <a href="#portfolio-anchor"> Portfolio </a>
-                <a href="#contacts-anchor"> Contacts </a>
+            <div class="container header__container">
+                <nav class="header__nav">
+                    <a class="link header__link link--active" href="#hero-anchor"> Home </a>
+                    <a class="link header__link" href="#about-me-anchor"> About me </a>
+                    <a class="link header__link" href="#skills-anchor"> Skills </a>
+                    <a class="link header__link" href="#portfolio-anchor"> Portfolio </a>
+                    <a class="link header__link" href="#contacts-anchor"> Contacts </a>
+                </nav>
             </div>
         </header>
-        <hr>
-        <section class="section">
-            <div class="container home_container ">
-                <h1><a name="home-anchor">Denis Novik</a></h1>
+        <hr class="hr">
+        <section class="hero">
+            <div class="container hero__container ">
+                <h1 class="title"><a name="hero-anchor">Denis Novik</a></h1>
                 <img src="./img/photo.jpg" alt="Photo Denis Novik" width="100%">
             </div>
         </section>
 
-        <section class="section text">
-            <div class="container about-me-container">
-                <div class="text about-me-text">
+        <section class="about-me sec-padding">
+            <div class="container about-me__container">
+                <div class="text">
 
-                    <h2><a name="about-me-anchor">About me</a></h2>
+                    <h2 class="h2"><a name="about-me-anchor">About me</a></h2>
 
-                    <p>Hi, I'm Denis – UX/UI designer from Minsk.
+                    <p class="text about-me__text">Hi, I'm Denis – UX/UI designer from Minsk.
                         I'm interested in design and everything connected with it.</p>
-                    <p>I'm studying at courses "Web and mobile design
+                    <p class="text about-me__text">I'm studying at courses "Web and mobile design
                         interfaces" in IT-Academy.</p>
-                    <p>Ready to implement excellent projects
+                    <p class="text about-me__text">Ready to implement excellent projects
                         with wonderful people.</p>
                 </div>
             </div>
         </section>
-        <section class="section text">
-            <div class="container skills skills-container">
+
+        <section class="skills sec-padding">
+            <div class="container skills-container">
                 <div class="heading skills-heading">
-                    <h2><a name="skills-anchor">Skills</a></h2>
-                    <p>I work in such programs as</p>
+                    <h2 class="h2 skills__h2"><a name="skills-anchor">Skills</a></h2>
+                    <p class="text">I work in such programs as</p>
                 </div>
                 <div class="poduct-list skills-product-list">
-                    <img src="./img/Ps.png" alt="ps" width="60">
-                    <img src="./img/Ai.png" alt="ai" width="60">
-                    <img src="./img/AF.png" alt="af" width="60">
-                    <img src="./img/Figma.png" alt="figma" width="60">
+                    <img class="skills__img" src="./img/Ps.png" alt="ps" >
+                    <img class="skills__img" src="./img/Ai.png" alt="ai" >
+                    <img class="skills__img" src="./img/AF.png" alt="af" >
+                    <img class="skills__img" src="./img/Figma.png" alt="figma" >
                 </div>
             </div>
         </section>
-        <section class="section text">
+        <section class="portfolio">
             <div class="container portfolio-container">
-                <h2><a name="portfolio-anchor">Portfolio</a></h2>
+                <h2 class="h2 portfolio__h2"><a name="portfolio-anchor">Portfolio</a></h2>
 
                 <img class="projects-img" src="./img/portfolio-first-project.jpg" alt="Online fashion store"
                     width="970">
-                <p> Online fashion store - Homepage </p>
+                <p class="text portfolio__text"> Online fashion store - Homepage </p>
 
                 <img class="projects-img" src="./img/portfolio-second-project.png" alt="Online fashion store"
                     width="970">
-                <p> Reebok Store - Concept </p>
+                <p class="text portfolio__text"> Reebok Store - Concept </p>
 
                 <img class="projects-img" src="./img/portfolio-third-project.png" alt="Online fashion store"
                     width="970">
-                <p> Braun Landing Page - Concept </p>
+                <p class="text portfolio__text"> Braun Landing Page - Concept </p>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer sec-padding">
             <div class="container contacts-footer">
-                <h2><a name="contacts-anchor">Contacts</a></h2>
-                    <p>Want to know more or just chat?
-                        You are welcome!</p>
-                        <a href="https://dribbble.com/">
-                    <button class="send-btn">Send message</button></a>
-                    <div class="img">
-                        <a href="https://ua.linkedin.com/">
+                <h2 class="h2 contacts__h2"><a name="contacts-anchor">Contacts</a></h2>
+                <p class="text contacts__text">Want to know more or just chat?
+                    You are welcome!</p>
+                    <div class="send-btn">
+                <a href="https://dribbble.com/">
+                    <button class="btn">Send message</button></a>
+                </div>
+                    <div class="contacts-img">
+                    <a class="link" href="https://ua.linkedin.com/">
                         <img src="./img/linkedin.svg" alt="logo" width="40"></a>
-                        <a href="https://www.instagram.com/">
+                    <a class="link" href="https://www.instagram.com/">
                         <img src="./img//instagram.svg" alt="logo" width="40"></a>
-                        <a href="https://www.behance.net/">
+                    <a class="link" href="https://www.behance.net/">
                         <img src="./img/behance.svg" alt="logo" width="40"></a>
-                        <a href="https://dribbble.com/">
+                    <a class="link" href="https://dribbble.com/">
                         <img src="./img/dribbble.svg" alt="logo" width="40"></a>
-                    </div>
-                    <p>Like me on
-                        LinkedIn, Instagram, Behance, Dribble</p>
+                </div>
+                <div class="bottom__text">
+                <p class="text bottom-footer__text">Like me on
+                    LinkedIn, Instagram, Behance, Dribble</p>
+                </div>
                 </div>
 
         </footer>
