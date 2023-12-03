@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --main-font:'Open Sans', sans-serif;
+            --color-black: black;
+            --color-white: white;
+            --color-gray: #828282;
+            --title-fonts: 700 34px var(--main-font);
+            --text-fonts: 400 18px var(--main-font);
+            --description-fonts: 400 14px var(--main-font);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+            font-family: var(--main-font);
+            font-style: normal;
+            align-items: center;
+            justify-content: center;
+        }
+        .header__container{
+            padding-bottom: 100px;
+        }
+        .link{
+            padding-right: 20px;
+            color: var(--color-black);
+        }
+        .link:hover{
+            font-weight: 700;
+        }
+        
+        .footer__title {
+            font: var(--title-fonts);
+            padding-bottom: 20px;
+        }
+
+        .footer__text {
+            font:var(--text-fonts);
+            padding-bottom: 60px;
+        }
+
+        .footer__button {
+            border-radius: 22px;
+            background: var(--color-black);
+            color: var(--color-white);
+            font:var(--text-fonts);
+            width: 180px;
+            height: 44px;
+            padding: 0px 16px;
+        }
+
+        .footer__button:hover{
+            background-color: #828282;
+            cursor:pointer;
+        }
+
+        .footer__icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 60px;
+            padding-top: 30px;
+        }
+
+        .footer__icon {
+            display: flex;
+            flex-direction: column;
+            max-width: 50px;
+        }
+
+        .footer__icon:hover{
+           opacity: 0.5; 
+        }
+        .footer__description {
+            color: var(--color-gray);
+            font: var(--description-fonts);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <nav>
+                    <a class="link" href="">Home</a>
+                    <a class="link" href="">About me</a>
+                    <a class="link" href="">Skills</a>
+                    <a class="link" href="">Portfolio</a>
+                    <a class="link" href="">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <footer class="footer">
+            <div class="container">
+                <h2 class="footer__title">Contacts</h2>
+                <p class="footer__text">Want to know more or just chat?<br>
+                    You are welcome!</p>
+                <button class="button footer__button">Send message</button>
+                <div class="footer__icons">
+                    <a class="footer__link" href="">
+                        <img class="footer__icon" src="../lesson/img/linkedin.svg" alt="">
+                    </a>
+                    <a class="footer__link" href="">
+                        <img class="footer__icon" src="../lesson/img/instagram.svg" alt="">
+                    </a>
+                    <a class="footer__link" href="">
+                        <img class="footer__icon" src="../lesson/img/behance.svg" alt="">
+                    </a>
+                    <a class="footer__link" href="">
+                        <img class="footer__icon" src="../lesson/img/dribbble.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer__description">
+                    Like me on<br>
+                    LinkedIn, Instagram, Behance,<br> Dribble
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
