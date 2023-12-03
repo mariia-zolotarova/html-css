@@ -13,6 +13,9 @@
         margin: 0;
         box-sizing: border-box;
     }
+    .wrapper{
+        border:10px solid white;
+    }
 
     .shoping-lists {
         display: flex;
@@ -51,6 +54,17 @@
 
     .shoping-list__item:nth-child(2n) {
         background-color: gray;
+    }
+
+    .shoping-list__item:hover {
+        background-color: #625E77;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+    }
+
+    .item:checked+.shoping-list__item {
+        background-color: bisque;
+        text-decoration: line-through
     }
 </style>
 
@@ -96,7 +110,7 @@
             <section class="footer">
                 <div class="footer__item">
                     <input id="inp7" class="item" type="checkbox">
-                    <label class="item" for="inp7">Bon appetit :)</label>
+                    <label>Bon appetit :)</label>
                 </div>
             </section>
         </div>
