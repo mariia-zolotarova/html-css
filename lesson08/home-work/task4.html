@@ -9,60 +9,97 @@
 
 <style>
     * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-    .shoping-list{
-        max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            align-items: center;
-            font-family: var(--main-font);
-            font-style: normal;
-            align-items: center;
-            justify-content: center;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 
+    .shoping-lists {
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+        margin: 0 auto;
+        font-style: normal;
+        align-items: center;
+        background-color: #3B3F45;
+    }
+
+    header {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #4A4F56;
+        text-align: center;
+    }
+
+    .shoping-list {
+        background-color: #88839E;
+        margin: 20px 130px 0 130px;
+    }
+
+    .shoping-list__item {
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+    }
+
+    .footer__item {
+        background-color: #4A4F56;
+        padding: 0 130px 0 130px;
+        margin-top: 45px;
+        min-height: 45px;
+    }
+
+    .shoping-list__item:nth-child(2n) {
+        background-color: gray;
+    }
 </style>
 
 <body>
     <div class="wrapper">
+
         <header class="header">
             <h1>CSS Dinner Shopping List</h1>
             <h5>Let’s go to the mall!</h5>
         </header>
-        <section class="shoping-list">
-            <div class="shoping-list__item">
-                <input id="inp1" class="item" type="checkbox">
-                <label class="item" for="inp1">A lot of pickles</label>
-                <p> (for the next lessons about CSS)</p>
-            </div>
-            <div class="shoping-list__item">
-                <input id="inp1" class="item" type="checkbox">
-                <label class="item" for="inp1">10 apples</label>
-                <p>  (for more CSS manipulations)</p>
-            </div>
-            <div class="shoping-list__item">
-                <input id="inp1" class="item" type="checkbox">
-                <label class="item" for="inp1">20 oranges</label>
-                <p>  (because they are awesome)</p>
-            </div>
-            <div class="shoping-list__item">
-                <input id="inp1" class="item" type="checkbox">
-                <label class="item" for="inp1">13 plates</label>
-                <p>  (hm... they always dissapear)</p>
-            </div>
-            <div class="shoping-list__item">
-                <input id="inp1" class="item" type="checkbox">
-                <label class="item" for="inp1">15 bentos</label>
-            </div>
-            <div class="shoping-list__item">
-                <input id="inp1" class="item" type="checkbox">
-                <label class="item" for="inp1">1 bottle of Sake </label>
-                <p>  (for my friends)</p>
-            </div>
-        </section>
+        <div class="shoping-lists">
+            <section class="shoping-list">
+                <div class="shoping-list__item">
+                    <input id="inp1" class="item" type="checkbox">
+                    <label class="item" for="inp1">A lot of pickles</label>
+                    <p> (for the next lessons about CSS)</p>
+                </div>
+                <div class="shoping-list__item">
+                    <input id="inp2" class="item" type="checkbox">
+                    <label class="item" for="inp2">10 apples</label>
+                    <p> (for more CSS manipulations)</p>
+                </div>
+                <div class="shoping-list__item">
+                    <input id="inp3" class="item" type="checkbox">
+                    <label class="item" for="inp3">20 oranges</label>
+                    <p> (because they are awesome)</p>
+                </div>
+                <div class="shoping-list__item">
+                    <input id="inp4" class="item" type="checkbox">
+                    <label class="item" for="inp4">13 plates</label>
+                    <p> (hm... they always dissapear)</p>
+                </div>
+                <div class="shoping-list__item">
+                    <input id="inp5" class="item" type="checkbox">
+                    <label class="item" for="inp5">15 bentos</label>
+                </div>
+                <div class="shoping-list__item">
+                    <input id="inp6" class="item" type="checkbox">
+                    <label class="item" for="inp6">1 bottle of Sake </label>
+                    <p> (for my friends)</p>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="footer__item">
+                    <input id="inp7" class="item" type="checkbox">
+                    <label class="item" for="inp7">Bon appetit :)</label>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 
