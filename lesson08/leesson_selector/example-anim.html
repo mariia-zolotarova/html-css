@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            width: 300px;
+        }
+        .field__text{
+            transform: scale(0);
+            overflow: hidden;
+            background-color: blue;
+            color: aliceblue;
+            transition: transform 1s;
+        }
+        .field__input{
+            display: none;
+        }
+
+        .field__input:checked+.field__text {
+            display: block;
+            transform: scale(1);
+        }
+        .tab{
+            background-color: blue;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Checkbox Example</h1>
+        <div class="field">
+            <label for="tab1" class="tab">
+                Tab 1
+            </label>
+            <input id="tab1" class="field__input" type="checkbox">
+            <p class="field__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum officiis odit itaque
+                porro eos, molestias temporibus aliquid consequuntur atque dicta exercitationem saepe sapiente nisi
+                consequatur dolor non et velit. Est incidunt dicta, nam, mollitia dolorum earum deserunt iure beatae hic
+                molestiae, reiciendis illum ipsa nihil animi fugit id assumenda totam.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

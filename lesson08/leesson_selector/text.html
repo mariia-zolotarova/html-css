@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            max-height: 0;
+            overflow: hidden;
+            /* display: none; */
+            transition: max-height 1s;
+        }
+        input{
+            display:none;
+        }
+        input:checked~.text{
+            display: block;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <label for="id1">Show</label>
+            <input id="id1" type="checkbox">
+            <p class="text">text1</p>
+            <p class="text">text2</p>
+            <p class="text">text3</p>
+            <p class="text">text4</p>
+        </div>
+    </div>
+</body>
+</html>

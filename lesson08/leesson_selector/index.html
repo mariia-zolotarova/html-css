@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero .title {
+            color: black;
+        }
+
+        .title.red {
+            color: red;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: red;
+        }
+
+        .hero>.title {
+            color: green;
+        }
+
+        .button+.description {
+            color: red;
+        }
+
+        .button~.description {
+            color: blue;
+        }
+
+        .title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: blue;
+        }
+
+        box {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover {
+
+            color: red;
+        }
+
+        .section1{
+            margin-bottom: 30px;
+        }
+        .section1:first-child{
+            color: red;
+        }
+        .section1:last-child{
+            color: red;
+        }
+        .section1:nth-child(2n){ 
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Selector</h1>
+        <div class="container">
+
+        </div>
+        <main class="main page--home">
+            <section class="hero">
+                <h1 class="title red">test</h1>
+                <h1 class="title">test</h1>
+                <h1 class="title">test</h1>
+                <div class="dox">
+                    <h1 class="title">test</h1>
+                </div>
+                <button class="button">start</button>
+            </section>
+
+            <section class="section">
+                <h1 class="section__title title">
+                    Test 1
+                </h1>
+                <div class="box">trst</div>
+            </section>
+        </main>
+
+        <div class="sec-row">
+            <section class="section1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum odio assumenda ipsum, dolorum eum
+                totam esse dolorem in explicabo id. Nisi beatae facere repellendus ea recusandae iste, totam saepe iusto
+                pariatur architecto assumenda placeat odio sunt. Sed facilis omnis beatae qui, harum non vero ratione
+                rerum quisquam velit placeat!
+            </section>
+            <section class="section1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum odio assumenda ipsum, dolorum eum
+                totam esse dolorem in explicabo id. Nisi beatae facere repellendus ea recusandae iste, totam saepe iusto
+                pariatur architecto assumenda placeat odio sunt. Sed facilis omnis beatae qui, harum non vero ratione
+                rerum quisquam velit placeat!
+            </section>
+            <section class="section1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum odio assumenda ipsum, dolorum eum
+                totam esse dolorem in explicabo id. Nisi beatae facere repellendus ea recusandae iste, totam saepe iusto
+                pariatur architecto assumenda placeat odio sunt. Sed facilis omnis beatae qui, harum non vero ratione
+                rerum quisquam velit placeat!
+            </section>
+            <section class="section1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laborum odio assumenda ipsum, dolorum eum
+                totam esse dolorem in explicabo id. Nisi beatae facere repellendus ea recusandae iste, totam saepe iusto
+                pariatur architecto assumenda placeat odio sunt. Sed facilis omnis beatae qui, harum non vero ratione
+                rerum quisquam velit placeat!
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

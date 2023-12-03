@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0;
         }
-        .skills__stars{
+
+        .skills__stars {
             color: gray;
         }
-        .is-active{
+
+        .is-active {
             color: black;
         }
-        .container{
+
+        .container {
             max-width: 900px;
             margin: 0 auto;
         }
-        .skills__row{
-            display:flex;
+
+        .skills__row {
+            display: flex;
             justify-content: space-around;
         }
-        .skills__item{
+
+        .skills__item {
             display: flex;
             flex-direction: column;
             text-align: center;
             align-items: center;
             gap: 16px;
         }
-        .skills__img{
+
+        .skills__img {
             width: 80px;
         }
     </style>
@@ -263,7 +269,30 @@
         </section>
 
         <footer class="footer">
-            <div class="container">
+            <div class="container contacts__footer">
+                <h2 class="h2 contacts__h2"><a name="contacts__anchor">Contacts</a></h2>
+                <p class="text contacts__text">Want to know more or just chat?<br>
+                    You are welcome!</p>
+
+                <a class="btn footer__btn" href="https://dribbble.com/" target="_blank">
+                    Send message
+                </a>
+
+                <div class="footer__icon">
+                    <a class="footer__link" href="https://ua.linkedin.com/">
+                        <img class="footer_icon" src="./img/linkedin.svg" alt="logo" width="40"></a>
+                    <a class="footer__link" href="https://www.instagram.com/">
+                        <img class="footer_icon" src="./img//instagram.svg" alt="logo" width="40"></a>
+                    <a class="footer__link" href="https://www.behance.net/">
+                        <img class="footer_icon" src="./img/behance.svg" alt="logo" width="40"></a>
+                    <a class="footer__link" href="https://dribbble.com/">
+                        <img class="footer_icon" src="./img/dribbble.svg" alt="logo" width="40"></a>
+                </div>
+
+                <p class="footer__description">Like me on
+                    <br>
+                    LinkedIn, Instagram, Behance, Dribble
+                </p>
 
             </div>
         </footer>
