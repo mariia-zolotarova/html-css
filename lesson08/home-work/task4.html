@@ -62,9 +62,13 @@
         border-bottom: 3px solid white;
     }
 
-    .item:checked+.shoping-list__item {
-        background-color: bisque;
-        text-decoration: line-through
+    /* .item:checked+.shoping-list__item { */
+    .item:checked ~ .test {
+        text-decoration: line-through;
+    }
+
+    .shoping-list__item:active {
+background-color: red;
     }
 </style>
 
@@ -79,8 +83,8 @@
             <section class="shoping-list">
                 <div class="shoping-list__item">
                     <input id="inp1" class="item" type="checkbox">
-                    <label class="item" for="inp1">A lot of pickles</label>
-                    <p> (for the next lessons about CSS)</p>
+                    <label class="test" for="inp1">A lot of pickles <span> (for the next lessons about CSS)</span></label>
+                    
                 </div>
                 <div class="shoping-list__item">
                     <input id="inp2" class="item" type="checkbox">
