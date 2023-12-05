@@ -8,13 +8,32 @@
 </head>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100&display=swap');
+
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
-    .wrapper{
-        border:10px solid white;
+
+    :root {
+        --main-font: 'Roboto', sans-serif;
+        --color-black: black;
+        --color-white: white;
+        --color-dark-gray: #4A4F56;
+        --color-deep-gray: #3B3F45;
+        --color-light-gray: #88839E;
+        --color-deep-light-gray: #7A7593;
+        --color-choose-gray: #625E77;
+        --color-peach: #FF8984;
+        --list-fonts: 400 18px var(--main-font);
+        --text-fonts: 400 11px var(--main-font);
+        --header-fonts: 700 24px var(--main-font);
+        --header-description-fonts: 400 16px var(--main-font);
+    }
+
+    .wrapper {
+        border: 10px solid var(--color-white);
     }
 
     .shoping-lists {
@@ -24,51 +43,80 @@
         margin: 0 auto;
         font-style: normal;
         align-items: center;
-        background-color: #3B3F45;
+        background-color: var(--color-deep-gray);
     }
 
     header {
         max-width: 900px;
         margin: 0 auto;
-        background-color: #4A4F56;
+        background-color: var(--color-dark-gray);
         text-align: center;
     }
 
+    header h1 {
+        font: var(--header-fonts);
+        color: var(--color-peach);
+    }
+
+    header h5 {
+        font: var(--header-description-fonts);
+        color: var(--color-peach);
+    }
+
     .shoping-list {
-        background-color: #88839E;
+        background-color: var(--color-light-gray);
         margin: 20px 130px 0 130px;
     }
 
     .shoping-list__item {
+        font: var(--list-fonts);
+        color: var(--color-white);
         display: flex;
         flex-direction: row;
         padding: 12px;
     }
 
-    .footer__item {
-        background-color: #4A4F56;
-        padding: 0 130px 0 130px;
-        margin-top: 45px;
-        min-height: 45px;
-    }
-
     .shoping-list__item:nth-child(2n) {
-        background-color: gray;
+        background-color: var(--color-deep-light-gray);
     }
 
     .shoping-list__item:hover {
-        background-color: #625E77;
-        border-top: 3px solid white;
-        border-bottom: 3px solid white;
+        background-color: var(--color-choose-gray);
+        border-top: 3px solid var(--color-white);
+        border-bottom: 3px solid var(--color-white);
     }
 
-    /* .item:checked+.shoping-list__item { */
-    .item:checked ~ .test {
+    .item:checked~.item-name {
         text-decoration: line-through;
     }
 
     .shoping-list__item:active {
-background-color: red;
+        background-color: var(--color-peach);
+        transition: all 0.5s;
+    }
+
+    .item-name__description {
+        font: var(--text-fonts);
+        color: var(--color-white);
+    }
+
+    .item-name__description::before {
+        content: "(";
+        display: inline-block;
+    }
+
+    .item-name__description::after {
+        content: ")";
+        display: inline-block;
+    }
+
+    .footer__item {
+        background-color: var(--color-dark-gray);
+        padding: 10px 130px 0 130px;
+        margin-top: 45px;
+        min-height: 45px;
+        color: var(--color-peach);
+        font: var(--list-fonts);
     }
 </style>
 
@@ -83,38 +131,38 @@ background-color: red;
             <section class="shoping-list">
                 <div class="shoping-list__item">
                     <input id="inp1" class="item" type="checkbox">
-                    <label class="test" for="inp1">A lot of pickles <span> (for the next lessons about CSS)</span></label>
-                    
+                    <label class="item-name" for="inp1">A lot of pickles <span class="item-name__description"> for the
+                            next lessons about CSS</span></label>
+
                 </div>
                 <div class="shoping-list__item">
                     <input id="inp2" class="item" type="checkbox">
-                    <label class="item" for="inp2">10 apples</label>
-                    <p> (for more CSS manipulations)</p>
+                    <label class="item-name" for="inp2">10 apples <span class="item-name__description"> for more CSS
+                            manipulations</span></label>
                 </div>
                 <div class="shoping-list__item">
                     <input id="inp3" class="item" type="checkbox">
-                    <label class="item" for="inp3">20 oranges</label>
-                    <p> (because they are awesome)</p>
+                    <label class="item-name" for="inp3">20 oranges <span class="item-name__description"> because they
+                            are awesome</span></label>
                 </div>
                 <div class="shoping-list__item">
                     <input id="inp4" class="item" type="checkbox">
-                    <label class="item" for="inp4">13 plates</label>
-                    <p> (hm... they always dissapear)</p>
+                    <label class="item-name" for="inp4">13 plates <span class="item-name__description"> hm... they
+                            always dissapear</span></label>
                 </div>
                 <div class="shoping-list__item">
                     <input id="inp5" class="item" type="checkbox">
-                    <label class="item" for="inp5">15 bentos</label>
+                    <label class="item-name" for="inp5">15 bentos</label>
                 </div>
                 <div class="shoping-list__item">
                     <input id="inp6" class="item" type="checkbox">
-                    <label class="item" for="inp6">1 bottle of Sake </label>
-                    <p> (for my friends)</p>
+                    <label class="item-name" for="inp6">1 bottle of Sake <span class="item-name__description"> for my
+                            friends</span> </label>
                 </div>
             </section>
             <section class="footer">
                 <div class="footer__item">
-                    <input id="inp7" class="item" type="checkbox">
-                    <label>Bon appetit :)</label>
+                    <p>Bon appetit :)</p>
                 </div>
             </section>
         </div>
