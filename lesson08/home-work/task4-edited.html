@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --main-font: 'Roboto', sans-serif;
+    /* 1:font-weight 2:font-size/line-height 3:font-family */
+    --title-font: 700 24px/normal var(--main-font);
+    --sub-title-font: 400 16px/24px var(--main-font);
+
+    --text-font: 400 18px/24px var(--main-font);
+    --sub-text-font: 400 11px/18px var(--main-font);
+
+
+    /* Color variable */
+    --dark-grey-color: #3B3F45;
+    --light-grey-color: #4A4F56;
+    --white-color: #fff;
+    --red-color: #FF8984;
+
+    --field-color: #88839E;
+    --field-sub-color: #7A7593;
+    --field-hover-color: #625E77;
+    --field-active-color: var(--red-color);
+
+    --disbled-color: #9B96AC;
+
+}
+
+
+body {
+    font: var(--text-font);
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+}
+
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    background-color: var(--light-grey-color);
+    padding: 19px 0 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--red-color);
+}
+
+.header__title {
+    font: var(--title-font);
+    margin-bottom: 4px;
+}
+
+.header__text {
+    font: var(--sub-title-font);
+}
+
+/* Form Section */
+
+.form__field {
+    background-color: var(--field-color);
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.form__field:nth-child(even) {
+    background-color: var(--field-sub-color);
+}
+
+.form__field:hover {
+    background-color: var(--field-hover-color);
+    border-top: 3px solid var(--white-color);
+    border-bottom: 3px solid var(--white-color);
+}
+
+.form__field:active {
+    background-color: var(--red-color);
+}
+
+.form__text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form__sub-text {
+    font: var(--sub-text-font);
+
+}
+
+.form__sub-text::before {
+    content: "(";
+}
+
+.form__sub-text::after {
+    content: ")";
+}
+
+.form__check {
+    width: 19px;
+    height: 19px;
+}
+
+.form__label {
+    width: 100%;
+    padding: 12px 0;
+}
+
+.form__check:checked+.form__label span {
+    text-decoration: line-through;
+    color: var(--disbled-color);
+}
+
+.form .container {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">CSS Dinner Shopping List</h1>
+                <p class="header__text">Let’s go to the mall!</p>
+            </div>
+        </header>
+
+
+        <div class="form">
+            <div class="container">
+                <div class="form__field">
+                    <input id="check01" class="form__check" type="checkbox">
+                    <label class="form__label" for="check01">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check022" class="form__check" type="checkbox">
+                    <label class="form__label" for="check022">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check02" class="form__check" type="checkbox">
+                    <label class="form__label" for="check02">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check03" class="form__check" type="checkbox">
+                    <label class="form__label" for="check03">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check04" class="form__check" type="checkbox">
+                    <label class="form__label" for="check04">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check05" class="form__check" type="checkbox">
+                    <label class="form__label" for="check05">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check06" class="form__check" type="checkbox">
+                    <label class="form__label" for="check06">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check07" class="form__check" type="checkbox">
+                    <label class="form__label" for="check07">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <input id="check08" class="form__check" type="checkbox">
+                    <label class="form__label" for="check08">
+                        <p class="form__text">
+                            <span> A lot of pickles</span>
+                            <span class="form__sub-text">for the next lessons about CSS</span>
+                        </p>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
