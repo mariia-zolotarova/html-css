@@ -5,8 +5,9 @@
 }
 
 .container{
-    /* max-width: 1440px;
-    min-height: 900px; */
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
     background-color: #39C;
     border: 25px solid #2B81AC;
     font-family: 'Open Sans', sans-serif;
@@ -25,7 +26,6 @@
     box-sizing: border-box;
     border: 2px solid #FFF;
     padding: 10px;
-    /* min-height: 147px; */
 }
 
 .weather-container__quater{
