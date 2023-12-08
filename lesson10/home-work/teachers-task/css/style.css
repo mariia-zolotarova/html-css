@@ -42,7 +42,6 @@
 
 
 .header__buttons {
-
     margin: 24px 120px 24px 0;
     display: flex;
     gap: 32px;
@@ -68,7 +67,6 @@
     border: 1px solid transparent;
     background: var(--orange-color);
     color: var(--white-color);
-    margin-bottom: 75px;
 }
 
 .first-screen {
@@ -118,9 +116,6 @@
 }
 
 
-
-
-
 .features__title {
     display: flex;
     text-align: center;
@@ -149,4 +144,8 @@
 
 .features__text {
     font: var(--features__text-font);
+}
+
+.features__button{
+    margin-bottom: 70px;
 }
