@@ -15,6 +15,10 @@
     --features__title-font: 700 36px/normal var(--main-font);
     --features__small-title-font: 600 22px/24px var(--main-font);
     --features__text-font: 500 16px/24px var(--main-font);
+    --footer__title-font:700 20px/24px var(--main-font);
+    --footer__text-font: var(--features__text-font);
+    --footer__input-font: var(--header-buttons-font);
+
 
     --orange-color: #F90;
     --dark-grey-color: #2F281E;
@@ -148,4 +152,58 @@
 
 .features__button{
     margin-bottom: 70px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin:70px 120px 70px 120px;
+    justify-content: space-between;
+}
+
+.footer__img{
+    display: flex;
+    max-width: 200px;
+    max-height: 32px;
+}
+
+.footer__title{
+    font: var(--footer__title-font);
+}
+
+.footer__text{
+    font:var(--footer__text-font);
+}
+
+.sign-up__footer{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 25px;
+}
+
+.sign-up__title{
+    max-width: 280px;
+}
+
+.quick-links__footer, .legal-stuff__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.legal-stuff__title, .quick-links__title{
+    margin-bottom: 15px;
+}
+
+
+.footer__input{
+    padding:15px 10px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    font: var(--footer__input-font);
+}
+
+.footer__button{
+    max-width: 180px;
 }
