@@ -44,6 +44,10 @@
     gap: 20px;
 }
 
+.menu__text:hover{
+    color: #F90;
+}
+
 
 .header__buttons {
     margin: 24px 120px 24px 0;
