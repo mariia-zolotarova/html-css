@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 200px;
+        }
+
+        .footer {
+            height: 200px;
+        }
+
+        .main__container {
+            display: flex;
+        }
+
+        .aside {
+            flex-grow: 1;
+            max-width: 300px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .container{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .item{
+            width: 32%;
+            background-color: blue;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1>Header</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container main__container">
+                <aside class="aside">Lorem ipsum dolor sit amet.</aside>
+                <div class="content">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <h1>Footer</h1>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
