@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header block */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header__logo{
+    margin: 10px;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.text__header:hover{
+    color: #18B5DC;
+}
+
+.header__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3C3C3C;
+    gap: 10px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+
+/* who we are block */
+
+.middle__container{
+    background-color: #F6F6F6;
+}
+
+.who-we-are__section{
+    padding: 150px 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.who-we-are__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.who-we-are__title{
+    text-transform: uppercase;
+    border-bottom: 4px solid #DDDBDB;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.who-we-are__text{
+    margin-bottom: 60px;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+
+/* footer block */
+
+.footer{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.footer__menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.text__footer:hover{
+    color: #18B5DC;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer__contact{
+    display: flex;
+    border: 1px solid #18B5DC;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    height: 42px;
+    width: 42px;
+}
