@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --grid-column: 80px repeat(3, 20px) 200px 100px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+            color: #FFF;
+            font-family: sans-serif;
+        }
+        .grid__item,
+        .item{
+            /* height: 100px; */
+            background-color: black;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: var(--grid-column);
+            grid-template-rows: repeat(4, 100px);
+            gap: 20px;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: var(--grid-column);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="box">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div> -->
+
+    <div class="wrapper">
+        <h1>Grid</h1>
+        <div class="grid">
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+            <div class="grid__item"></div>
+        </div>
+    </div>
+
+</body>
+</html>

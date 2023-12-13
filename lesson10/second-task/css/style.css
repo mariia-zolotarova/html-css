@@ -4,30 +4,47 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-font: 'Lato', sans-serif;;
+    --header-font: 600 20px/24px var(--main-font);
+    --button-text: 600 18px/24px var(--main-font);
+    --title-text-font: 700 34px/normal var(--main-font);
+    --text-font: 300 16px/24px var(--main-font);
+    --name-text-font: 700 18px/normal var(--main-font);
+    --job-text-font: 300 18px/normal var(--main-font);
+    --footer-font: 600 18px/24px var(--main-font);
+
+    --blue-color: #18B5DC;
+    --white-color: #FFF;
+    --light-gray-color: #F6F6F6;
+    --dark-gray-color: #3C3C3C;
+}
+
 /* header block */
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.header__logo{
+.header__logo {
     margin: 10px;
 }
 
-.header__menu{
+.header__menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    font: var(--header-font);
 }
 
-.text__header:hover{
-    color: #18B5DC;
+.text__header:hover {
+    color: var(--blue-color);
 }
 
-.header__button{
+.header__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,46 +52,109 @@
     gap: 10px;
     margin: 10px 20px;
     padding: 10px 20px;
-    background-color: white;
+    background-color: var(--white-color);
+    font: var(--button-text);
+}
+
+.header__button:hover{
+    background-color:  var(--blue-color);
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
 }
 
 
 /* who we are block */
 
-.middle__container{
-    background-color: #F6F6F6;
+.middle__container {
+    background-color: var(--light-gray-color);
 }
 
-.who-we-are__section{
+.who-we-are__section {
     padding: 150px 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.who-we-are__cards{
+.who-we-are__title{
+    font: var(--title-text-font);
+}
+
+.who-we-are__text{
+    font: var(--text-font);
+}
+
+.who-we-are__cards {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.who-we-are__title{
+.img__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.who-we-are__name{
+    font: var(--name-text-font);
+}
+
+.who-we-are__job{
+    font: var(--job-text-font);
+}
+
+.img__container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  var(--blue-color);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-links a {
+    color: var(--white-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.img__container:hover .social-links {
+    opacity: 1;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.who-we-are__title {
     text-transform: uppercase;
     border-bottom: 4px solid #DDDBDB;
     padding-bottom: 20px;
     margin-bottom: 40px;
 }
 
-.who-we-are__text{
+.who-we-are__text {
     margin-bottom: 60px;
     text-align: center;
-    color: #3C3C3C;
+    color: var(--dark-gray-color);
 }
 
 
 /* footer block */
 
-.footer{
+.footer__container {
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -82,26 +162,27 @@
     gap: 28px;
 }
 
-.footer__menu{
+.footer__menu {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 20px;
+    font: var(--footer-font);
 }
 
-.text__footer:hover{
-    color: #18B5DC;
+.text__footer:hover {
+    color:  var(--blue-color);
 }
 
-.footer__contacts{
+.footer__contacts {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.footer__contact{
+.footer__contact {
     display: flex;
-    border: 1px solid #18B5DC;
+    border: 1px solid  var(--blue-color);
     justify-content: center;
     align-items: center;
     padding: 5px;
