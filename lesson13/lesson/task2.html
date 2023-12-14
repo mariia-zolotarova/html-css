@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            
+        }
+        .row{
+            width: 800px;
+            height: 800px;
+            background-color: gray;
+            position: relative;
+        }
+        
+        .box:nth-child(1)
+        {
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .box:nth-child(2)
+        {
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .box:nth-child(3)
+        {
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .box:nth-child(4)
+        {
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .box:last-child{
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

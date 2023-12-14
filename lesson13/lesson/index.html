@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box0, .box1, .box2{
+            background-color: red;
+        }
+        .box1{
+            position: static;
+       
+            position: absolute;
+            border: 2px solid;
+            background-color: aqua;
+
+            bottom:10px;
+            left: 10px;
+        }
+
+        .box0{
+            border: 2px solid;
+            background-color: yellow;
+
+            position: fixed;
+            bottom:10px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .row{
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .row::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            z-index: 1;
+
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="box0">1111</div>
+        <div class="box1">2222</div>
+        <div class="box2">3333</div>
+        <div class="box2">4444</div>
+        <div class="box2">5555</div>
+        <div class="box2">6666</div>
+    </div>
+</body>
+</html>
