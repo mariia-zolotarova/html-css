@@ -10,15 +10,61 @@ html {
 
 :root{
     --main-font: 'Delius Unicase', cursive;
-    --title-font: 400 36px/normal var(--main-font);
-    --author-font: 500 12px/24px var(--main-font);
-    --date-font: 400 12px/24px var(--main-font);
+    --title-font: 400 36rem/normal var(--main-font);
+    --author-font: 500 12rem/24rem var(--main-font);
+    --date-font: 400 12rem/24rem var(--main-font);
 
     --white-color: #FFF;
+    --easy-white-color: #E0E0E0;
+    --gray-color:#E0E0E080;
 }
 
 .item {
     padding: 10rem;
+    position: relative;
+}
+
+.like__icon{
+    position: absolute;
+    left: 30rem;
+    top: 30rem;
+    border: var(--easy-white-color) solid;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--gray-color);
+}
+
+.like__icon:hover{
+    background-color: var(--easy-white-color);
+}
+
+.download__icon{
+    position: absolute;
+    right: 30rem;
+    top: 30rem;
+    border: var(--easy-white-color) solid;
+    padding: 10px;
+    background-color: var(--gray-color);
+    border-radius: 15px;
+}
+.download__icon:hover{
+    background-color: var(--easy-white-color);
+}
+
+.item__author {
+    position: absolute;
+    left: 30rem;
+    bottom: 30rem;
+    font: var(--author-font);
+    color: var(--white-color);
+}
+
+.item__date {
+    position: absolute;
+    right: 30rem;
+    bottom: 30rem;
+    font: var(--date-font);
+    color: var(--white-color);
 }
 
 main {
@@ -80,18 +126,6 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: 15rem;
-}
-
-.item__author {
-    margin: -30rem 20rem;
-    color: var(--white-color);
-    font: var(--author-font);
-}
-
-.item__date {
-    margin: -30rem 20rem;
-    color: var(--white-color);
-    font: var(--date-font);
 }
 
 .second__container {
