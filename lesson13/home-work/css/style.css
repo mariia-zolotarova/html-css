@@ -1,0 +1,68 @@
+/* html{
+ font-size: 1px;   
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.text__container{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 70px;
+    gap:30px;
+}
+
+.text__button{
+    background-color: blueviolet;
+    color: white;
+    border: blueviolet solid;
+    border-radius: 15px;
+    padding:5px 50px;
+}
+
+.img__container{
+    display: flex;
+    position: relative;
+}
+
+.img__planet{
+    max-width: 1000px;
+    position: absolute;
+    transform: translate(5%, 20%);
+}
+
+.img__doodle01{
+    max-width: 200px;
+    position: absolute;
+    transform: translate(-30%, 0%);
+}
+
+.img__doodle02{
+    max-width: 200px;
+    position: absolute;
+    transform: translate(-50%, 310%);
+}
+
+.img__doodle03{
+    max-width: 200px;
+    position: absolute;
+    transform: translate(50%, 140%);
+}
+
+/* .img__cursor{
+    max-width: 400px;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+} */
