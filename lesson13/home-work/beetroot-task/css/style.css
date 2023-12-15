@@ -59,10 +59,10 @@ html{
     gap: 40px;
 }
 
-.title__container{
+/* .title__container{
     display: flex;
     flex-direction: row;
-}
+} */
 
 .title{
     font: var(--title-font);
@@ -71,8 +71,17 @@ html{
 
 .chapter{
     font: var(--chapter-font);
-    letter-spacing: 1.2px;
+    vertical-align: super;
+    text-transform: none;
 }
 .text{
     font: var(--text-font);
+}
+
+.underline{
+    font: var(--text-font);
+    text-decoration-line: underline;
+}
+mark{
+    background-color: rgb(213, 213, 213);
 }
