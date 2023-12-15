@@ -36,13 +36,18 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .header__nav{
     display: flex;
     flex-direction: row;
     font: var(--nav-font);
+    gap: 10px;
+    position: absolute;
+    left: 10%;
 }
+
 
 .header__languague{
    font: var(--languague-font); 
