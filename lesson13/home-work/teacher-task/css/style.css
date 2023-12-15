@@ -55,34 +55,35 @@ html{
 .img__container{
     display: flex;
     position: relative;
+    width: 100%;
 }
 
 .img__planet{
-    max-width: 1000rem;
+    width: 90%;
     position: absolute;
     transform: translate(5%, 20%);
 }
 
 .img__doodle01{
-    max-width: 200rem;
+    max-width: 20%;
     position: absolute;
     transform: translate(-30%, 0%);
 }
 
 .img__doodle02{
-    max-width: 200rem;
+    max-width: 20%;
     position: absolute;
     transform: translate(-50%, 310%);
 }
 
 .img__doodle03{
-    max-width: 200rem;
+    max-width: 20%;
     position: absolute;
-    transform: translate(50%, 140%);
+    transform: translate(30%, 140%);
 }
 
 .img__cursor{
-    max-width: 300rem;
+    max-width: 30%;
     position: absolute; 
     transform: translate(170%, 60%);
 }
