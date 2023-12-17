@@ -1,0 +1,88 @@
+html{
+    font-size: 1px; 
+}
+
+:root{
+
+    --farro-font: 'Farro', sans-serif;
+    --francois-font: 'Francois One', sans-serif;
+    --pt-font: 'PT Sans', sans-serif;
+    --staatliches-font: 'Staatliches', sans-serif;
+    --tourney-font: 'Tourney', sans-serif;
+
+    --chapter-font: 300 30rem/normal var(--farro-font);
+    --title-font: 400 36rem/normal var(--francois-font);
+    --text-font: 400 28rem/normal var(--pt-font);
+    --nav-font: 400 22rem/24rem var(--staatliches-font);
+    --languague-font: 600 22rem/24rem var(--tourney-font);
+
+    --black-color: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+    margin:13px 120px;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    font: var(--nav-font);
+    gap: 10px;
+    position: absolute;
+    left: 10%;
+}
+
+
+.header__languague{
+   font: var(--languague-font); 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    height: 180px;
+    width: 270px;
+    background-color: #E6E6E6;
+    fill: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s, background-color 0s 0.5s;
+}
+
+.card:hover {
+    transform: rotateX(-180deg);
+    background-color: black;
+    fill: white;
+}
+
+.card__front {
+    display: block;
+}
+
+.card__back {
+    display: none;
+    fill: white;
+    transform: rotateX(-180deg);
+}
