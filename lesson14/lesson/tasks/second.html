@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .car {
+            max-height: 0;
+            transition: max-height 0.5s;
+        }
+
+        .is-active {
+            max-height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>test</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, architecto!
+            </p>
+            <button class='show'>Show</button>
+        </div>
+        <img class="car" width="500"
+            src="https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+    </div>
+
+    <script>
+        const bthShow = document.querySelector('.show')
+
+        const image = document.querySelector('.car')
+
+        bthShow.addEventListener('click', ()=>{
+            image.classList.toggle('is-active')
+        })
+    </script>
+</body>
+
+</html>

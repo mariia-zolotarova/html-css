@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .light{
+             --bg-color: #FFF;
+             --color-text: #000; 
+        }
+        .dark{
+             --bg-color: #000;
+             --color-text: #FFF;   
+        }
+
+
+
+        body{
+            background-color: var(--bg-color);
+            color: var(--color-text);
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .switch{
+            padding: 2px;
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+            border-radius: 50px;
+            background-color: var(--bg-color);
+            display: flex;
+        }
+        .switch__item{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: var(--color-text);
+        }
+        
+        .is-active{
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body class="light">
+
+    <div class="switch">
+        <div class="switch__item">
+
+        </div>
+    </div>
+    <div>
+        <h2 class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat dignissimos nesciunt quia distinctio
+            quibusdam esse neque ea dolores soluta iste reiciendis laborum, expedita consectetur obcaecati excepturi
+            aspernatur a animi fuga omnis! Magnam, rerum! Iste sapiente, consectetur, eos obcaecati illo numquam optio
+            nobis laudantium placeat ad voluptas, ipsam exercitationem unde cum assumenda culpa cumque? Necessitatibus
+            corporis doloremque laudantium eligendi vitae nesciunt dolorem aliquid molestias asperiores. Magni odit
+            saepe dolor vero tenetur ipsum molestiae deserunt pariatur excepturi explicabo error, illum qui molestias
+            iusto fugiat blanditiis dolorum quaerat ratione ex debitis nulla asperiores. Libero adipisci facilis dolores
+            iusto et eveniet accusantium veritatis?</p>
+        <h2 class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat dignissimos nesciunt quia distinctio
+            quibusdam esse neque ea dolores soluta iste reiciendis laborum, expedita consectetur obcaecati excepturi
+            aspernatur a animi fuga omnis! Magnam, rerum! Iste sapiente, consectetur, eos obcaecati illo numquam optio
+            nobis laudantium placeat ad voluptas, ipsam exercitationem unde cum assumenda culpa cumque? Necessitatibus
+            corporis doloremque laudantium eligendi vitae nesciunt dolorem aliquid molestias asperiores. Magni odit
+            saepe dolor vero tenetur ipsum molestiae deserunt pariatur excepturi explicabo error, illum qui molestias
+            iusto fugiat blanditiis dolorum quaerat ratione ex debitis nulla asperiores. Libero adipisci facilis dolores
+            iusto et eveniet accusantium veritatis?</p>
+        <h2 class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat dignissimos nesciunt quia distinctio
+            quibusdam esse neque ea dolores soluta iste reiciendis laborum, expedita consectetur obcaecati excepturi
+            aspernatur a animi fuga omnis! Magnam, rerum! Iste sapiente, consectetur, eos obcaecati illo numquam optio
+            nobis laudantium placeat ad voluptas, ipsam exercitationem unde cum assumenda culpa cumque? Necessitatibus
+            corporis doloremque laudantium eligendi vitae nesciunt dolorem aliquid molestias asperiores. Magni odit
+            saepe dolor vero tenetur ipsum molestiae deserunt pariatur excepturi explicabo error, illum qui molestias
+            iusto fugiat blanditiis dolorum quaerat ratione ex debitis nulla asperiores. Libero adipisci facilis dolores
+            iusto et eveniet accusantium veritatis?</p>
+        <h2 class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat dignissimos nesciunt quia distinctio
+            quibusdam esse neque ea dolores soluta iste reiciendis laborum, expedita consectetur obcaecati excepturi
+            aspernatur a animi fuga omnis! Magnam, rerum! Iste sapiente, consectetur, eos obcaecati illo numquam optio
+            nobis laudantium placeat ad voluptas, ipsam exercitationem unde cum assumenda culpa cumque? Necessitatibus
+            corporis doloremque laudantium eligendi vitae nesciunt dolorem aliquid molestias asperiores. Magni odit
+            saepe dolor vero tenetur ipsum molestiae deserunt pariatur excepturi explicabo error, illum qui molestias
+            iusto fugiat blanditiis dolorum quaerat ratione ex debitis nulla asperiores. Libero adipisci facilis dolores
+            iusto et eveniet accusantium veritatis?</p>
+        <h2 class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat dignissimos nesciunt quia distinctio
+            quibusdam esse neque ea dolores soluta iste reiciendis laborum, expedita consectetur obcaecati excepturi
+            aspernatur a animi fuga omnis! Magnam, rerum! Iste sapiente, consectetur, eos obcaecati illo numquam optio
+            nobis laudantium placeat ad voluptas, ipsam exercitationem unde cum assumenda culpa cumque? Necessitatibus
+            corporis doloremque laudantium eligendi vitae nesciunt dolorem aliquid molestias asperiores. Magni odit
+            saepe dolor vero tenetur ipsum molestiae deserunt pariatur excepturi explicabo error, illum qui molestias
+            iusto fugiat blanditiis dolorum quaerat ratione ex debitis nulla asperiores. Libero adipisci facilis dolores
+            iusto et eveniet accusantium veritatis?</p>
+        <h2 class="h2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat dignissimos nesciunt quia distinctio
+            quibusdam esse neque ea dolores soluta iste reiciendis laborum, expedita consectetur obcaecati excepturi
+            aspernatur a animi fuga omnis! Magnam, rerum! Iste sapiente, consectetur, eos obcaecati illo numquam optio
+            nobis laudantium placeat ad voluptas, ipsam exercitationem unde cum assumenda culpa cumque? Necessitatibus
+            corporis doloremque laudantium eligendi vitae nesciunt dolorem aliquid molestias asperiores. Magni odit
+            saepe dolor vero tenetur ipsum molestiae deserunt pariatur excepturi explicabo error, illum qui molestias
+            iusto fugiat blanditiis dolorum quaerat ratione ex debitis nulla asperiores. Libero adipisci facilis dolores
+            iusto et eveniet accusantium veritatis?</p>
+    </div>
+    <script>
+        const bthSwitch = document.querySelector('.switch')
+
+        const theme = document.querySelector('.light')
+
+        bthSwitch.addEventListener('click', ()=>{
+            theme.classList.toggle('dark')
+            bthSwitch.classList.toggle('is-active')
+        })
+
+
+        const allh2 = document.querySelectorAll('.h2')
+
+        allh2.forEach(h2=>{
+            h2.addEventListener('click', ()=>{
+                theme.classList.toggle('dark')
+            bthSwitch.classList.toggle('is-active')
+            })
+        })
+    </script>
+</body>
+
+</html>

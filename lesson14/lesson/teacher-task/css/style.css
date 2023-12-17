@@ -1,0 +1,91 @@
+html{
+ font-size: 1px;   
+}
+
+:root{
+    --main-font: 'Montserrat', sans-serif;
+    --title-font: 400 36rem/normal var(--main-font);
+    --text-font: 500 20rem/24rem var(--main-font);
+    --button-font: 400 20rem/24rem var(--main-font);
+
+    --white-color: #FFF;
+    --black-color: black;
+    --violet-color: blueviolet; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.text__container{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 70rem;
+    gap:30rem;
+    z-index: 2;
+    position: relative;
+}
+
+.tile__text{
+    font: var(--title-font);
+}
+.text{
+    font: var(--text-font);
+}
+
+.text__button{
+    background-color: var(--violet-color);
+    color: var(--white-color);
+    border: var(--violet-color) solid;
+    border-radius: 15rem;
+    padding:5rem 50rem;
+    font: var(--button-font);
+}
+
+.img__container{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.img__planet{
+    width: 90%;
+    position: absolute;
+    transform: translate(5%, 20%);
+}
+
+.img__doodle01{
+    max-width: 20%;
+    position: absolute;
+    transform: translate(-30%, 0%);
+}
+
+.img__doodle02{
+    max-width: 20%;
+    position: absolute;
+    transform: translate(-50%, 310%);
+}
+
+.img__doodle03{
+    max-width: 20%;
+    position: absolute;
+    transform: translate(30%, 140%);
+}
+
+.img__cursor{
+    max-width: 30%;
+    position: absolute; 
+    transform: translate(170%, 60%);
+}

@@ -1,0 +1,87 @@
+html{
+    font-size: 1px; 
+}
+
+:root{
+
+    --farro-font: 'Farro', sans-serif;
+    --francois-font: 'Francois One', sans-serif;
+    --pt-font: 'PT Sans', sans-serif;
+    --staatliches-font: 'Staatliches', sans-serif;
+    --tourney-font: 'Tourney', sans-serif;
+
+    --chapter-font: 300 30rem/normal var(--farro-font);
+    --title-font: 400 36rem/normal var(--francois-font);
+    --text-font: 400 28rem/normal var(--pt-font);
+    --nav-font: 400 22rem/24rem var(--staatliches-font);
+    --languague-font: 600 22rem/24rem var(--tourney-font);
+
+    --black-color: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+    margin:13px 120px;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    font: var(--nav-font);
+    gap: 10px;
+    position: absolute;
+    left: 10%;
+}
+
+
+.header__languague{
+   font: var(--languague-font); 
+}
+
+.text__container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* .title__container{
+    display: flex;
+    flex-direction: row;
+} */
+
+.title{
+    font: var(--title-font);
+    text-transform: uppercase;
+}
+
+.chapter{
+    font: var(--chapter-font);
+    vertical-align: super;
+    text-transform: none;
+}
+.text{
+    font: var(--text-font);
+}
+
+.underline{
+    font: var(--text-font);
+    text-decoration-line: underline;
+}
+mark{
+    background-color: rgb(213, 213, 213);
+}
