@@ -32,6 +32,36 @@ html{
     margin:13px 120px;
 }
 
+.background-image{
+    position: absolute;
+    top: 130px;
+    right: 0;
+    z-index: -1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 20px;
+    padding-bottom: 70px;
+}
+
+.side-bar__content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    position: sticky;
+    top: 70px;
+}
+
+.side-bar__menu{
+    font: var(--title-font);
+    text-transform: uppercase;
+    border-bottom: 1px solid #BDBDBD;
+    color: black;
+    text-decoration: none;
+}
+
 .header__container{
     display: flex;
     flex-direction: row;
@@ -53,20 +83,22 @@ html{
    font: var(--languague-font); 
 }
 
-.text__container{
+.content__container{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 70px;
 }
 
-/* .title__container{
-    display: flex;
-    flex-direction: row;
-} */
+.short-line{
+    width: 100px;
+    height: 8px;
+    background: black;
+}
 
 .title{
     font: var(--title-font);
     text-transform: uppercase;
+    padding-bottom: 40px;
 }
 
 .chapter{
