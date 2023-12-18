@@ -1,8 +1,8 @@
-html{
-    font-size: 1px; 
+html {
+    font-size: 1px;
 }
 
-:root{
+:root {
 
     --farro-font: 'Farro', sans-serif;
     --francois-font: 'Francois One', sans-serif;
@@ -19,27 +19,27 @@ html{
     --black-color: black;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
-    gap:70px;
-    margin:13px 120px;
+    gap: 70px;
+    margin: 13px 120px;
 }
 
-.header__container{
+.header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     flex-direction: row;
     font: var(--nav-font);
@@ -49,8 +49,8 @@ html{
 }
 
 
-.header__languague{
-   font: var(--languague-font); 
+.header__languague {
+    font: var(--languague-font);
 }
 
 .cards {
@@ -60,53 +60,57 @@ html{
     justify-content: center;
 }
 
-.card {
-    height: 180px;
-    width: 270px;
-    background-color: #E6E6E6;
-    fill: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* transition: transform 2s, background-color 0s 0.5s; */
-    transition: transform 2s;
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
     position: relative;
 }
 
-.card:hover {
-    transition: transform 1s;
-    transform: rotateX(-180deg);
-    background-color: black;
-    /* fill: white; */
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
 }
 
-.card__front {
-    /* display: block; */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
-.card__back {
-    /* display: none; */
-    position: absolute;
+.flip-card-front {
+    background-color: #bbb;
 }
 
-/* .card:hover .card__front {
-    display: none;
-} */
-.card:hover .card__back {
-    display: block;
-    transition: transform 1s;
-    transform: rotateX(-180deg);
-}
-
-.card-logo__front{
+.flip-card-front__logo{
     fill: black;
-    backface-visibility: hidden;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
-
-.card-logo__back{
+.flip-card-back {
+    background-color: black;
     fill: white;
-    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
 
+.flip-card-back__logo{
+    fill: white;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
