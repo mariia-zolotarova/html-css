@@ -37,6 +37,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    align-items: center;
 }
 
 .header__nav {
@@ -53,11 +54,32 @@ html {
     font: var(--languague-font);
 }
 
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heading__line{
+    background: black;
+    width: 100rem;
+    height: 8rem;
+}
+
+.heading__title{
+    font: var(--title-font);
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     gap: 20px;
     justify-content: center;
+    border-top: 2px solid #E6E6E6;
+    border-bottom: 2px solid #E6E6E6;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .flip-card {
