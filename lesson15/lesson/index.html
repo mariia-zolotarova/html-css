@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            background-color: aqua;
+            border-radius: 20px;
+            border: 1px solid;
+            padding: 20px;
+            width: 400px;
+        }
+        input{
+            width: 100%;
+
+        }
+        .input,
+        .form__select{
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: transparent;
+            color: green;
+            outline: none;
+        }
+
+        .input:focus{
+            border: 2px solid blue;
+            background-color: lavenderblush;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .input:focus+span{
+            color: red;
+        }
+
+        .form__field{
+            position: relative;
+            width: 100%;
+        }
+        .form__field-name{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: all 0.8s;
+        }
+        .input:focus+.form__field-name{
+            background-color: aqua;
+            padding: 0px 5px;
+            border-radius: 10px;
+            top: -8px;
+            font-size: 12px;
+        }
+        .form__row{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        .form__checkbox__icon{
+            width: 20px;
+            height: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h2>Registrarion</h2>
+        <div class="form__row">
+            <div class="form__field">
+                <input class="input" type="text" >
+                <span class="form__field-name">Name</span>
+            </div>
+            <div class="form__field">
+                <input class="input" type="text" placeholder="Name">
+            </div>
+        </div>
+        <div class="form__field">
+            <input class="input" type="text" >
+            <span class="form__field-name">Name</span>
+        </div>
+        <div class="form__field">
+            <input class="input" type="tel" placeholder="Phone">
+        </div>
+        <div class="form__field">
+            <input class="input" type="text" placeholder="Email">
+        </div>
+        <div class="form__checkbox">
+            <input id="check01" type="checkbox">
+            <label for="check01">
+                <div class="form__checkbox__icon"></div>
+                <div class="form__checkbox__text">lorem10</div>
+            </label>
+        </div>
+        <div class="form__select-item">
+            <select class="form__select" name="" id="">
+                <option value="">USD</option>
+                <option value="">UAN</option>
+                <option value="">EUR</option>
+            </select>
+
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
