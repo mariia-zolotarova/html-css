@@ -1,0 +1,218 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+
+    --title-font: 500 24px/normal var(--main-font);
+    --text-font: 400 15px/normal var(--main-font);
+    --description-font: 400 13px/normal var(--main-font);
+    --button-font: 500 15px/normal var(--main-font);
+
+    --black-color: #1C1C1C;
+    --dark-gray-color: #545454;
+    --light-grey-color: #969696;
+    --light-color: #F7F7F7;
+    --blue-color: #007BFF;
+    --white-color: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    background-color: var(--light-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 20px;
+    width: 570px;
+    height: 590px;
+    gap: 20px;
+    background-color: var(--white-color);
+    margin: 50px;
+    font: var(--text-font);
+    color: var(--dark-gray-color);
+}
+
+.form__title {
+    padding-top: 15px;
+    font: var(--title-font);
+    color: var(--black-color);
+}
+
+input,
+select {
+    width: 100%;
+}
+
+.input,
+.form__select {
+    border: 1px solid var(--light-grey-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input:focus {
+    border: 1px solid var(--blue-color);
+}
+
+.form__select:focus {
+    border: 1px solid var(--blue-color);
+}
+
+.form__select-radio {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.form__field__place {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form__field {
+    width: 100%;
+}
+
+.form__row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form__button__sign-up {
+
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    justify-content: center;
+    align-items: center;
+    font: var(--button-font);
+}
+
+.form__button__update {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    width: 30%;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    justify-content: center;
+    align-items: center;
+    font: var(--button-font);
+}
+
+.form__text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    font: var(--description-font);
+}
+
+.description__link {
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+.form__field-email__text {
+    font: var(--description-font);
+}
+
+.form__footer {
+    border-top: 1px solid var(--light-color);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.input__radio {
+    display: none;
+}
+
+.sex__select {
+    display: flex;
+    gap: 20px;
+}
+
+.field__icon-check {
+    display: none;
+}
+
+.field__icon-uncheck {
+    display: block;
+}
+
+#male:checked+label .field__icon-check {
+    display: block;
+}
+
+#male:checked+label .field__icon-uncheck {
+    display: none;
+}
+
+#female:checked+label .field__icon-check {
+    display: block;
+}
+
+#female:checked+label .field__icon-uncheck {
+    display: none;
+}
+
+.form-row__photo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input__profile {
+    display: none;
+}
+
+.input__field-profile {
+    border: 1px solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text__upload {
+    display: flex;
+    padding: 10px;
+    font: var(--description-font);
+}
+
+.button__delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid;
+}
