@@ -18,16 +18,21 @@
             border-radius: 20px;
             border: 1px solid;
             padding: 20px;
-            width: 400px;
+            width: 570px;
+            height: 590px;
             gap: 20px;
         }
 
-        input {
+        .form__title{
+            padding-top: 15px;
+        }
+        input,
+        select {
             width: 100%;
         }
 
         .input,
-        .form__select {
+        .form__select{
             border: 2px solid;
             border-radius: 10px;
             padding: 10px;
@@ -35,22 +40,61 @@
             outline: none;
         }
 
-        .form__select-radio{
+        .form__select-radio {
             display: flex;
             flex-direction: row;
-            
+            margin-right: auto;
+            gap: 20px;
         }
+
+        .form__field__place{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .form__field {
+            width: 100%
+        }
+
         .form__row {
             display: flex;
             flex-direction: row;
             gap: 20px;
+        }
+
+        .form__button__sign-up{
+            
+            border: 2px solid;
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            width: 100%;
+            color: white;
+            background-color: #007BFF;
+            justify-content: center;
+            align-items: center;
+        }
+        .form__text{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .form__footer{
+            border-top: 1px solid #E4E4E4;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
     <form class="form">
-        <h2>Create an Account</h2>
+        <h2 class="form__title">Create an Account</h2>
         <div class="form__row">
             <div class="form__field">
                 <span class="form__field-name">First Name</span>
@@ -62,21 +106,48 @@
             </div>
         </div>
         <div class="form__field">
-            <span class="form__field-name">E-mail</span>
+            <span class="form__field-email">E-mail</span>
             <input class="input" type="email">
             <span class="form__field-name">We'll never share your email with anyone else.</span>
         </div>
 
         <div class="form__select-radio">
-            <!-- <div class="radio__male"> -->
-                <input type="radio" name="sex" id="male" value="male">
-                <label for="male">Male</label>
-            <!-- </div>
-            <div class="radio__female"> -->
-                <input type="radio" name="sex" id="female" value="female">
-                <label for="female">Female</label>
-            <!-- </div> -->
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Female</label>
         </div>
+
+        <div class="form__row">
+            <div class="form__field">
+                <span class="form__field-name">Country</span>
+                <select class="form__select" name="" id="">
+                    <option value="">Ukraine</option>
+                    <option value="">USA</option>
+                    <option value="">Poland</option>
+                </select>
+            </div>
+            <div class="form__field">
+                <span class="form__field-city">City</span>
+                <input class="input" type="text">
+            </div>
+        </div>
+
+        <div class="form__button">
+            <button class="form__button__sign-up">Sign Up</button>
+        </div>
+
+        <div class="form__text">
+            <p>By clicking the 'Sign Up' button, you confirm that you accept our
+            <a href=""> <br> Terms of Use</a> and <a href="">Privacy Policy</a>
+        </p>
+        </div>
+
+        <footer class="form__footer">
+            <p>Have an account</p>
+            <a href="">Log In</a>
+        </footer>
+
     </form>
 </body>
 
