@@ -59,6 +59,21 @@
     /* max-width: 290px; */
 }
 
+.services__container__cards__item:hover {
+    border: 1px solid var(--green-color);
+    border-radius: 15px;
+}
+
+.services__container__text__description {
+    font: var(--description-font);
+    padding-bottom: 15px;
+}
+
+.services__container__text__title {
+    font: var(--title-font);
+    padding-bottom: 40px;
+}
+
 .footer {
     background: var(--dark-blue-color);
     color: var(--white-color);
@@ -89,4 +104,6 @@
     align-items: center;
 }
 
-/* .footer__socials__link__icon {} */
+.footer__socials__link__icon :hover {
+    fill: var(--green-color);
+}
