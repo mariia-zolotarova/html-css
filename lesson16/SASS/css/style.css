@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.hero {
+  display: flex;
+}
+.hero__title {
+  margin-bottom: 20px;
+}
+.hero__text {
+  color: red;
+}
+.hero__text--blue {
+  color: blue;
+}
+.hero__text--large {
+  font-size: large;
+}
+.hero__text:hover {
+  color: black;
+}
+.hero__text:after {
+  content: "test";
+}
+
+/*# sourceMappingURL=style.css.map */

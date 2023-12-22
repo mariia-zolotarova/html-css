@@ -1,0 +1,31 @@
+body {
+    background-color: aquamarine;
+}
+
+.hero {
+    display: flex;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $color-red;
+
+        &--blue {
+            color: $color-blue;
+        }
+
+        &--large {
+            font-size: large;
+        }
+
+        &:hover {
+            color: black;
+        }
+
+        &:after {
+            content: "test";
+        }
+    }
+}
