@@ -1,7 +1,41 @@
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.container {
+  margin: 121px 135px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-slider {
+  display: flex;
+  flex-direction: row;
+  gap: 170px;
+}
+.section-slider__right {
+  max-width: 430px;
+}
+.section-slider__left .profile__img {
+  --size: 100px;
+  --thickness: 1px;
+  --gap: 15px;
+  padding: calc(var(--gap) + var(--thickness));
+  outline: var(--thickness) solid #FC0;
+  outline-offset: calc(-1 * var(--thickness));
+  -webkit-mask: conic-gradient(at var(--size) var(--size), rgba(0, 0, 0, 0) 75%, #000 0) 0 0/calc(100% - var(--size)) calc(100% - var(--size)), linear-gradient(#000 0 0) content-box;
 }
 
 /*# sourceMappingURL=index.css.map */
